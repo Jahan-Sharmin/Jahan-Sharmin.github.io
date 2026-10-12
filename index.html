@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sharmin Jahan | Computer Engineering</title>
+<meta name="description" content="Sharmin Jahan, Computer Engineering student at American International University - Bangladesh (AIUB). Lightweight, explainable AI for edge devices, IoT systems and database-driven software.">
+<meta property="og:title" content="Sharmin Jahan | Computer Engineering">
+<meta property="og:description" content="Lightweight, explainable AI for edge devices, IoT systems and database-driven software.">
+<meta property="og:image" content="assets/sharmin.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%236B4226'/><text x='50%' y='57%' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>SJ</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E8DAB2; --surface:#FBF6EA; --surface-2:#F3EAD2; --ink:#2E1F14; --muted:#6B5444; --line:#D6C6A0;
+  --primary:#6B4226; --primary-ink:#FBF6EA; --primary-soft:#EFE3C4;
+  --coral:#A45A3D; --coral-soft:#F3E0D4;
+  --mint:#6B4226; --mint-soft:#E7DCC9;
+  --sun:#7A5A12; --sun-soft:#F1E3B8;
+  --hero-a:#6B4226; --hero-b:#A45A3D;
+  --shadow:0 1px 2px rgba(46,31,20,.06),0 10px 30px rgba(107,66,38,.10);
+}
+:root[data-theme="dark"]{
+  --bg:#21170F; --surface:#2D2017; --surface-2:#38291D; --ink:#F1E6CC; --muted:#C4B6A6; --line:#4A3626;
+  --primary:#D9BF77; --primary-ink:#2E1F14; --primary-soft:#3E2E1C;
+  --coral:#E0A07F; --coral-soft:#402619; --mint:#D9BF77; --mint-soft:#3A2D1A; --sun:#E8DAB2; --sun-soft:#3E3220;
+  --hero-a:#3B2414; --hero-b:#7A3F28; --shadow:none;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.7 Poppins,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-weight:600;line-height:1.25;margin:0;letter-spacing:-.01em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+.brand{font-weight:700;color:var(--ink);font-size:17px;margin-right:auto;display:flex;align-items:center;gap:10px}
+.brand i{width:30px;height:30px;border-radius:9px;background:var(--primary);color:var(--primary-ink);display:grid;place-items:center;font-style:normal;font-size:12px}
+.brand:hover{text-decoration:none}
+nav .links{display:flex;gap:20px;font-size:14px}
+nav .links a{color:var(--muted);font-weight:500}
+nav .links a:hover{color:var(--ink);text-decoration:none}
+#theme{background:var(--surface);border:1px solid var(--line);color:var(--muted);border-radius:9px;width:36px;height:36px;cursor:pointer;font-size:15px}
+@media(max-width:780px){nav .links{display:none}}
+
+/* hero */
+.hero{padding:28px 0 8px}
+.hero-card{border-radius:24px;padding:48px;color:#fff;background:radial-gradient(1200px 400px at 85% -10%,rgba(255,255,255,.14),transparent 60%),linear-gradient(135deg,var(--hero-a),var(--hero-b));display:grid;grid-template-columns:190px 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.hero-card::after{content:"";position:absolute;right:-80px;bottom:-120px;width:320px;height:320px;border-radius:50%;background:rgba(217,191,119,.45);filter:blur(60px)}
+.hero-card img{width:190px;height:190px;border-radius:22px;object-fit:cover;border:4px solid rgba(255,255,255,.25);position:relative;z-index:1}
+.hero-card > div{position:relative;z-index:1}
+.eyebrow{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;opacity:.8}
+.hero h1{font-size:clamp(32px,5vw,46px);font-weight:700;margin:6px 0 10px}
+.hero .lede{font-size:17px;max-width:600px;margin:0 0 24px;opacity:.92;font-weight:300}
+.hero .lede strong{font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 17px;border-radius:11px;font-size:14px;font-weight:500;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.btn:hover{text-decoration:none;border-color:var(--primary)}
+.btn svg{width:16px;height:16px}
+.hero .btn{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.28);color:#fff}
+.hero .btn.primary{background:#D9BF77;color:#2E1F14;border-color:#D9BF77}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:var(--primary-ink)}
+@media(max-width:720px){.hero-card{grid-template-columns:1fr;padding:30px 24px;gap:22px}.hero-card img{width:130px;height:130px}}
+
+/* sections */
+section{padding:60px 0 20px}
+.sec-head{margin-bottom:26px}
+.sec-head .kicker{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8E4A31;margin-bottom:6px}
+:root[data-theme="dark"] .sec-head .kicker{color:var(--coral)}
+.sec-head h2{font-size:30px;font-weight:700}
+.sec-head p{color:var(--muted);margin:8px 0 0;max-width:700px}
+
+.thread{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px 28px;font-size:16.5px;box-shadow:var(--shadow);position:relative}
+.thread::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:4px;border-radius:0 4px 4px 0;background:linear-gradient(#D9BF77,#A45A3D)}
+.thread p{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{font-size:12.5px;padding:5px 12px;border-radius:999px;background:var(--primary-soft);color:var(--primary);font-weight:500;border:1px solid var(--line)}
+
+/* cards */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow);margin-bottom:20px}
+.card h3{font-size:20px;margin:10px 0 8px}
+.card h4{font-size:14px;font-weight:600;margin:18px 0 6px;color:var(--ink)}
+.card p{margin:0 0 12px}
+.meta{font-size:13.5px;color:var(--muted)}
+.tag{display:inline-block;font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:7px;letter-spacing:.02em}
+.tag.review{background:var(--sun-soft);color:var(--sun)}
+.tag.prep{background:var(--primary-soft);color:var(--primary)}
+.tag.ongoing{background:var(--mint-soft);color:var(--mint)}
+.tag.done{background:var(--coral-soft);color:var(--coral)}
+.results{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.results div{background:var(--surface-2);border-radius:12px;padding:12px 14px;border-top:3px solid #D9BF77}
+.results b{display:block;font-size:20px;font-weight:700;color:var(--coral)}
+.results span{font-size:12px;color:var(--muted)}
+@media(max-width:640px){.results{grid-template-columns:repeat(2,1fr)}}
+ul.tight{margin:0 0 12px;padding-left:20px}
+ul.tight li{margin:3px 0}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.stack span{font-size:12px;border:1px solid var(--line);background:var(--bg);border-radius:7px;padding:2px 9px;color:var(--muted);font-weight:500}
+
+/* spec table */
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 6px}
+.specs div{border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.specs dt{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+.specs dd{margin:2px 0 0;font-weight:500;font-size:14px}
+@media(max-width:700px){.specs{grid-template-columns:1fr 1fr}}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:820px){.cols{grid-template-columns:1fr}}
+
+/* galleries */
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:14px 0 6px}
+.shots.wide{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.shot{all:unset;cursor:zoom-in;display:block;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface-2);transition:transform .15s,border-color .15s}
+.shot:hover,.shot:focus-visible{transform:translateY(-2px);border-color:var(--primary)}
+.shot img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top left;background:#fff}
+.shot.contain img{object-fit:contain;padding:6px}
+.shot span{display:block;font-size:12.5px;padding:8px 11px;color:var(--muted);font-weight:500}
+.label{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:20px}
+
+details.more{margin-top:16px;border:1px solid var(--line);border-radius:12px;padding:12px 16px;background:var(--bg)}
+details.more summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--primary)}
+
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.pgrid .card{margin:0}
+@media(max-width:780px){.pgrid{grid-template-columns:1fr}}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:36px;margin:0}
+.skills>div{padding:12px 0;border-bottom:1px solid var(--line)}
+.skills dt{font-size:12px;font-weight:600;color:var(--coral);text-transform:uppercase;letter-spacing:.08em}
+.skills dd{margin:3px 0 0}
+@media(max-width:640px){.skills{grid-template-columns:1fr}}
+
+.awards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.awards .card{margin:0}
+.awards .shot img{aspect-ratio:auto}
+.awards .shot.ceremony img{aspect-ratio:3/2;object-fit:cover;object-position:center 30%}
+.awards .shot{margin-bottom:14px}
+@media(max-width:700px){.awards{grid-template-columns:1fr}}
+
+footer{margin-top:40px;padding:56px 0 64px;border-top:1px solid var(--line)}
+footer h2{font-size:28px;font-weight:700;margin-bottom:6px}
+footer p{color:var(--muted);margin:0 0 20px}
+.small{font-size:13px;color:var(--muted);margin-top:30px}
+
+/* lightbox */
+#lb{position:fixed;inset:0;z-index:50;background:rgba(33,23,15,.92);display:none;align-items:center;justify-content:center;padding:24px;flex-direction:column;gap:12px}
+#lb.open{display:flex}
+#lb img{max-width:min(1200px,100%);max-height:80vh;border-radius:10px;background:#fff}
+#lb p{color:#eee;margin:0;font-size:14px;text-align:center}
+#lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:10px;width:44px;height:44px;font-size:22px;cursor:pointer}
+#lb .x{top:16px;right:16px}#lb .prev{left:16px;top:50%}#lb .next{right:16px;top:50%}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top"><i>SJ</i>Sharmin Jahan</a>
+    <div class="links">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#awards">Honours</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button id="theme" aria-label="Toggle dark mode">◐</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-card">
+      <img src="assets/sharmin.jpg" alt="Portrait of Sharmin Jahan">
+      <div>
+        <div class="eyebrow">Computer Engineering · American International University - Bangladesh (AIUB)</div>
+        <h1>Sharmin Jahan</h1>
+        <p class="lede">I build <strong>small, efficient and explainable AI</strong> that runs on low-cost hardware, and the IoT and software systems that put it to work where people need it.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:sharminjahan.sj02@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
+          <a class="btn" href="https://github.com/Jahan-Sharmin" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/sj-sharminjahan/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="focus">
+  <div class="wrap">
+    <div class="sec-head"><span class="kicker">About</span><h2>What ties my work together</h2></div>
+    <div class="thread">
+      <p>Most accurate AI models are too heavy and too opaque for the places that need them most: a farm in rural Bangladesh, a low-cost CCTV box, a phone. My research asks how far a model can be compressed while staying accurate <em>and</em> trustworthy, and my projects put sensors, microcontrollers, databases and apps around it so it does something useful.</p>
+      <div class="chips">
+        <span class="chip">Lightweight deep learning</span>
+        <span class="chip">Model quantization (INT8)</span>
+        <span class="chip">Explainable AI (Grad-CAM)</span>
+        <span class="chip">Edge &amp; IoT systems</span>
+        <span class="chip">Database design</span>
+        <span class="chip">Wireless communication</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Research</span>
+      <h2>Papers</h2>
+      <p>Co-authored with classmates at American International University - Bangladesh (AIUB).</p>
+    </div>
+
+    <article class="card">
+      <span class="tag review">Under review · ICREST 2026</span>
+      <h3>A Lightweight and Explainable Deep Learning Framework for Real-World Anomaly Detection on the UCF-Crime Dataset</h3>
+      <p class="meta">J. Sadia, <strong>S. Jahan</strong> (second author), M. S. Akther, A. Sayed, R. Mahmud (Assistant Professor, AIUB)</p>
+      <p>Surveillance cameras far outnumber the people who can watch them, and the most accurate detectors are large "black box" models. We built a compact video anomaly detector (MobileNetV3-Small backbone with a GRU temporal head), compressed it with quantization-aware training, and measured something rarely tested: whether the model's Grad-CAM explanations survive compression.</p>
+      <div class="results">
+        <div><b>1.2 MB</b><span>final model size</span></div>
+        <div><b>75%</b><span>smaller than FP32</span></div>
+        <div><b>0.807</b><span>accuracy (unchanged)</span></div>
+        <div><b>167 FPS</b><span>INT8 inference speed</span></div>
+      </div>
+      <p><strong>Key finding:</strong> accuracy held after compression (AUC 0.888 → 0.892), but the explanations did not. FP32 and INT8 heatmaps overlapped at a mean IoU of only 0.06, so a compressed model can give the same answer for different reasons. A temporal majority-voting window also cut false alarms in simulated streams from 8 to 0.</p>
+      <div class="shots wide" data-group="anomaly">
+        <button class="shot contain" data-cap="Same frame, same prediction, different attention: Grad-CAM from the FP32 vs INT8 model, and their difference."><img src="assets/gradcam-fp32-vs-int8.png" alt="Grad-CAM comparison" loading="lazy"><span>Grad-CAM: FP32 vs INT8</span></button>
+        <button class="shot contain" data-cap="Proposed pipeline: frame sampling, MobileNetV3-Small, GRU, focal loss, QAT, Grad-CAM, IoU measurement and majority voting."><img src="assets/anomaly-pipeline.png" alt="Pipeline diagram" loading="lazy"><span>Pipeline</span></button>
+        <button class="shot contain" data-cap="FP32 vs INT8: 4× smaller, nearly the same speed, identical accuracy."><img src="assets/anomaly-compression.png" alt="Compression bar charts" loading="lazy"><span>Size, speed, accuracy</span></button>
+        <button class="shot contain" data-cap="Validation confusion matrix and ROC curve (AUC 0.888)."><img src="assets/anomaly-confusion-roc.png" alt="Confusion matrix and ROC" loading="lazy"><span>Confusion matrix &amp; ROC</span></button>
+        <button class="shot contain" data-cap="Training and validation curves, 10 epochs with early stopping."><img src="assets/anomaly-training-curves.png" alt="Training curves" loading="lazy"><span>Training curves</span></button>
+      </div>
+      <div class="stack"><span>MobileNetV3</span><span>GRU</span><span>Focal loss</span><span>Quantization-aware training</span><span>Grad-CAM</span><span>UCF-Crime</span></div>
+    </article>
+
+    <article class="card">
+      <span class="tag prep">Manuscript in preparation</span>
+      <h3>Comparative Evaluation of Lightweight Deep Learning Architectures for Diffusion-Generated Image Detection using Edge-Oriented Optimization</h3>
+      <p class="meta">U. K. Esha, <strong>S. Jahan</strong> (second author), M. J. Medha</p>
+      <p>AI-generated images are getting harder to spot, and most detectors are too heavy for phones or embedded devices. We benchmark seven architectures (MobileNetV3-Small, MobileNetV4, ShuffleNetV2, GhostNet, EfficientNetV2-S, ResNet50, DenseNet121) on Stable Diffusion v1.5 images from GenImage, in both FP32 and post-training INT8 form.</p>
+      <ul class="tight">
+        <li>Metrics go beyond accuracy: F1, model size, memory, latency and throughput</li>
+        <li>Tests robustness to common image corruptions under simulated edge-device limits</li>
+      </ul>
+      <div class="stack"><span>GenImage</span><span>Post-training quantization</span><span>Edge benchmarking</span></div>
+    </article>
+
+    <article class="card">
+      <span class="tag ongoing">In progress</span>
+      <h3>Outage Probability Analysis of M-ary Amplitude DCSK Modulation with Multi-ring Constellation under Nakagami-m Fading</h3>
+      <p>An analytical study of how reliably a chaos-based modulation scheme performs over realistic fading wireless channels: the communication side of my interest in low-cost, dependable links for sensor networks.</p>
+      <div class="stack"><span>Data communication</span><span>Chaotic modulation</span><span>Fading channels</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Projects</span>
+      <h2>Things I've built</h2>
+      <p>Hardware, software and full systems, from course work to my capstone. Click any image to enlarge it.</p>
+    </div>
+
+    <!-- Capstone -->
+    <article class="card">
+      <span class="tag ongoing">Capstone · Ongoing (Spring 2026-27)</span>
+      <h3>Integrated Multimodal IoT Platform for Real-Time Agricultural Monitoring and AI-Enabled Predictive Management</h3>
+      <p class="meta">Final-year project · Team of 4 · Supervisor: Dr. Chowdhury Akram Hossain</p>
+      <p>Farmers usually monitor soil, water, weather and animals separately and by hand. We are building one modular system for crop fields, nurseries, fishponds and livestock: distributed sensors and cameras feed a processing unit that runs lightweight vision models and sends predictions, alerts and recommendations to a single mobile app.</p>
+      <ul class="tight">
+        <li>Sensors: soil moisture, pH, temperature, humidity, dissolved oxygen, turbidity, plus cameras</li>
+        <li>Solar-charged battery nodes for remote sites; wired or wireless links to the processing unit</li>
+        <li>Lightweight models (MobileNet, YOLO) evaluated against task-specific models</li>
+        <li>Evaluated on prediction performance, response time, reliability, usability and a farmer impact survey</li>
+      </ul>
+      <div class="stack"><span>IoT</span><span>Sensor fusion</span><span>Computer vision</span><span>Mobile app</span><span>Centralized database</span></div>
+    </article>
+
+    <!-- Smart room -->
+    <article class="card">
+      <span class="tag done">Microprocessor &amp; Embedded Systems · Team of 5</span>
+      <h3>Smart Room System with IoT</h3>
+      <p>A working scale model of a room that can be monitored and controlled from a phone. The microcontroller reads temperature and humidity, shows live status on an OLED screen, and lets the user set fan speed, switch the light and open or close the door remotely through the Blynk app. We simulated the circuit in Proteus first, then built the hardware.</p>
+      <dl class="specs">
+        <div><dt>Microcontroller</dt><dd>NodeMCU (ESP8266 / ESP32), Wi-Fi</dd></div>
+        <div><dt>Firmware</dt><dd>C/C++ in Arduino IDE</dd></div>
+        <div><dt>Cloud &amp; app</dt><dd>Blynk IoT (web + mobile)</dd></div>
+        <div><dt>Sensing</dt><dd>DHT11 temperature &amp; humidity</dd></div>
+        <div><dt>Actuators</dt><dd>DC fan via motor driver, SG90 servo door, LED</dd></div>
+        <div><dt>Simulation</dt><dd>Proteus</dd></div>
+      </dl>
+      <div class="label">Hardware</div>
+      <div class="shots" data-group="room">
+        <button class="shot" data-cap="Inside the model: fan, servo door, OLED and the control circuit."><img src="assets/smarthome-inside.jpg" alt="Inside of smart room model" loading="lazy"><span>Inside the model</span></button>
+        <button class="shot" data-cap="OLED showing live temperature, humidity, fan speed and door status."><img src="assets/smarthome-oled.jpg" alt="OLED display" loading="lazy"><span>Live OLED readout</span></button>
+        <button class="shot" data-cap="LED switched on remotely from the Blynk app."><img src="assets/smarthome-led.jpg" alt="LED on" loading="lazy"><span>Remote LED control</span></button>
+        <button class="shot" data-cap="Angled view of the model."><img src="assets/smarthome-angle.jpg" alt="Angled view" loading="lazy"><span>Angled view</span></button>
+        <button class="shot" data-cap="Outside of the model."><img src="assets/smarthome-outside.jpg" alt="Outside view" loading="lazy"><span>Outside</span></button>
+      </div>
+      <div class="label">Design, simulation &amp; app</div>
+      <div class="shots" data-group="room">
+        <button class="shot contain" data-cap="Block diagram: sensor, microcontroller, display, Wi-Fi, relay/load and the IoT app."><img src="assets/room-block-diagram.png" alt="Block diagram" loading="lazy"><span>Block diagram</span></button>
+        <button class="shot contain" data-cap="System flowchart: connect, wait for phone commands, act, read sensors, update screen."><img src="assets/room-flowchart.png" alt="Flowchart" loading="lazy"><span>Flowchart</span></button>
+        <button class="shot contain" data-cap="Full circuit simulated in Proteus."><img src="assets/room-sim-circuit.png" alt="Proteus circuit" loading="lazy"><span>Proteus circuit</span></button>
+        <button class="shot contain" data-cap="Simulated OLED output of temperature and humidity."><img src="assets/room-sim-oled.png" alt="Simulated OLED" loading="lazy"><span>Simulated OLED</span></button>
+        <button class="shot contain" data-cap="Simulated servo motor (door)."><img src="assets/room-sim-servo.png" alt="Simulated servo" loading="lazy"><span>Simulated servo</span></button>
+        <button class="shot contain" data-cap="Blynk web dashboard: door, fan, fan-speed regulator and LED."><img src="assets/room-blynk-web.png" alt="Blynk web dashboard" loading="lazy"><span>Blynk web dashboard</span></button>
+        <button class="shot contain" data-cap="Blynk mobile app controlling the room."><img src="assets/room-blynk-mobile.png" alt="Blynk mobile app" loading="lazy"><span>Blynk mobile app</span></button>
+      </div>
+    </article>
+
+    <!-- IDMS -->
+    <article class="card">
+      <span class="tag done">Database course project</span>
+      <h3>Internship Defence Management System (IDMS)</h3>
+      <p>A desktop system that runs a university's whole internship defence process: registration, supervision, monthly attendance, report submission, defence scheduling and final evaluation. Each of four roles signs in to its own dashboard, and every screen reads and writes live to an Oracle database.</p>
+      <dl class="specs">
+        <div><dt>Language</dt><dd>C# (.NET, Windows Forms)</dd></div>
+        <div><dt>Database</dt><dd>Oracle 10g</dd></div>
+        <div><dt>Database logic</dt><dd>SQL, PL/SQL procedures</dd></div>
+        <div><dt>Design</dt><dd>ER modelling + normalization</dd></div>
+        <div><dt>Users</dt><dd>4 roles, role-based login</dd></div>
+        <div><dt>Type</dt><dd>Full-stack desktop app</dd></div>
+      </dl>
+      <div class="cols">
+        <div>
+          <h4>What each role can do</h4>
+          <ul class="tight">
+            <li><strong>Admin:</strong> manage students, companies, faculty and company supervisors, registrations, defences and results</li>
+            <li><strong>Student:</strong> register an internship, submit the report, view attendance, defence date and final grade</li>
+            <li><strong>Faculty supervisor:</strong> review reports, schedule defences, evaluate students</li>
+            <li><strong>Company supervisor:</strong> track interns and record monthly attendance and warnings</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Database work</h4>
+          <ul class="tight">
+            <li>Designed the ER model for students, companies, supervisors, registrations, reports, attendance, defences and results</li>
+            <li>Normalized the schema to remove redundancy and keep records consistent across roles</li>
+            <li>Wrote PL/SQL procedures for scheduling and evaluation logic</li>
+            <li>Search plus add, update and delete screens for managing records</li>
+          </ul>
+        </div>
+      </div>
+      <div class="shots" data-group="idms">
+        <button class="shot" data-cap="Role-based sign-in, connected to the Oracle database."><img src="assets/idms-login.jpg" alt="IDMS login" loading="lazy"><span>Role-based login</span></button>
+        <button class="shot" data-cap="Admin dashboard: manage students with search and full CRUD."><img src="assets/idms-admin-students.jpg" alt="Admin students screen" loading="lazy"><span>Admin: manage students</span></button>
+        <button class="shot" data-cap="Student dashboard: registration, report status, defence date and final grade."><img src="assets/idms-student.jpg" alt="Student dashboard" loading="lazy"><span>Student dashboard</span></button>
+        <button class="shot" data-cap="Faculty supervisor dashboard: students, reports, defences and evaluations."><img src="assets/idms-faculty.jpg" alt="Faculty supervisor dashboard" loading="lazy"><span>Faculty supervisor</span></button>
+        <button class="shot" data-cap="Company supervisor dashboard: interns, attendance and warnings."><img src="assets/idms-company.jpg" alt="Company supervisor dashboard" loading="lazy"><span>Company supervisor</span></button>
+      </div>
+      <div class="stack"><span>C#</span><span>.NET WinForms</span><span>Oracle 10g</span><span>SQL</span><span>PL/SQL</span><span>ER modelling</span><span>Normalization</span></div>
+    </article>
+
+    <!-- Super Shop -->
+    <article class="card">
+      <span class="tag done">C# desktop application</span>
+      <h3>Super Shop Management System</h3>
+      <p>A full-stack desktop application for a retail store that covers employees, inventory, carts, orders and checkout. Four roles each get their own dashboard, all backed by one MySQL database.</p>
+      <dl class="specs">
+        <div><dt>Language</dt><dd>C# (.NET Framework, Windows Forms)</dd></div>
+        <div><dt>Database</dt><dd>MySQL</dd></div>
+        <div><dt>Design</dt><dd>ER model, 11 entities</dd></div>
+        <div><dt>Users</dt><dd>4 roles, role-based login</dd></div>
+        <div><dt>Concepts</dt><dd>OOP, inheritance, CRUD</dd></div>
+        <div><dt>Type</dt><dd>Full-stack desktop app</dd></div>
+      </dl>
+      <div class="cols">
+        <div>
+          <h4>What each role can do</h4>
+          <ul class="tight">
+            <li><strong>Admin:</strong> add, search, update and delete employees and their roles; manage inventory</li>
+            <li><strong>Manager:</strong> manage products, prices and stock, with automatic in-stock / out-of-stock status</li>
+            <li><strong>Salesperson:</strong> view pending orders and process checkout with line-item subtotals</li>
+            <li><strong>Customer:</strong> browse products, add to cart and check out</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Database design</h4>
+          <ul class="tight">
+            <li>User base entity with Admin, Manager, Salesperson and Customer roles (inheritance)</li>
+            <li>Inventory, Cart, CartItems, Sales and SaleDetails for the full order flow</li>
+            <li>Rewards table that tracks salesperson points and bonuses per sale</li>
+          </ul>
+        </div>
+      </div>
+      <div class="shots" data-group="shop">
+        <button class="shot contain" data-cap="ER / class diagram: 11 entities with role inheritance and a rewards system."><img src="assets/supershop-er.png" alt="Super Shop ER diagram" loading="lazy"><span>ER diagram</span></button>
+        <button class="shot" data-cap="Login for staff, plus a separate customer login."><img src="assets/shop-login.jpg" alt="Login screen" loading="lazy"><span>Login</span></button>
+        <button class="shot" data-cap="Admin panel: employee management with search, update and delete."><img src="assets/shop-admin.jpg" alt="Admin panel" loading="lazy"><span>Admin panel</span></button>
+        <button class="shot" data-cap="Manager dashboard: inventory with live stock status."><img src="assets/shop-manager.jpg" alt="Manager dashboard" loading="lazy"><span>Manager: inventory</span></button>
+        <button class="shot" data-cap="Sales dashboard: pending orders and checkout."><img src="assets/shop-sales.jpg" alt="Sales dashboard" loading="lazy"><span>Salesperson: checkout</span></button>
+        <button class="shot" data-cap="Customer dashboard: products, cart and checkout."><img src="assets/shop-customer.jpg" alt="Customer dashboard" loading="lazy"><span>Customer: cart</span></button>
+      </div>
+      <div class="stack"><span>C#</span><span>.NET Framework</span><span>WinForms</span><span>MySQL</span><span>SQL</span><span>OOP</span></div>
+    </article>
+
+    <div class="pgrid">
+      <article class="card">
+        <span class="tag done">Web</span>
+        <h3>Web development</h3>
+        <p>Responsive front-end sites, including a mobile financial service website, e-commerce stores and landing pages.</p>
+        <ul class="tight">
+          <li><a href="https://github.com/Jahan-Sharmin/Panda-commerce" target="_blank" rel="noopener">Panda Commerce</a></li>
+          <li><a href="https://github.com/Jahan-Sharmin/Penguin-Fashion-Tailwind" target="_blank" rel="noopener">Penguin Fashion (Tailwind)</a></li>
+          <li><a href="https://github.com/Jahan-Sharmin/Biker-Zone-DaisyUI" target="_blank" rel="noopener">Biker Zone (DaisyUI)</a></li>
+          <li><a href="https://github.com/Jahan-Sharmin/influencer-gears" target="_blank" rel="noopener">Influencer Gears</a></li>
+          <li><a href="https://github.com/Jahan-Sharmin?tab=repositories" target="_blank" rel="noopener">All repositories on GitHub →</a></li>
+        </ul>
+        <div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Tailwind</span><span>React</span><span>Next.js</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag done">More projects</span>
+        <h3>Java &amp; electronics</h3>
+        <p><strong>Student Attendance Management System:</strong> a Java application to record, track and report attendance.</p>
+        <p><strong>State Variable Filter:</strong> an op-amp filter with low-pass, high-pass and band-pass outputs (Analog Electronics).</p>
+        <p><strong>Home Security Alarm:</strong> an alarm circuit for home safety (Electronic Devices).</p>
+        <div class="stack"><span>Java</span><span>OOP</span><span>Op-amps</span><span>Circuit design</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Skills</span>
+      <h2>Education &amp; skills</h2>
+      <p>B.Sc. in Computer Engineering, American International University - Bangladesh (AIUB) (Fall 2023 to Spring 2027, expected). CGPA 3.86 / 4.00, studying on an academic scholarship.</p>
+    </div>
+    <div class="card">
+      <dl class="skills">
+        <div><dt>Programming</dt><dd>Python, C++, C#, Java, JavaScript</dd></div>
+        <div><dt>AI / ML</dt><dd>Deep learning, CNNs and RNNs (GRU), model quantization, Grad-CAM</dd></div>
+        <div><dt>Embedded &amp; IoT</dt><dd>ESP32 / NodeMCU, Arduino Uno, sensors and actuators, Blynk, Proteus</dd></div>
+        <div><dt>Web</dt><dd>HTML, CSS, JavaScript, React, Next.js, Tailwind</dd></div>
+        <div><dt>Databases</dt><dd>Oracle, MySQL, SQL, PL/SQL, ER modelling, normalization</dd></div>
+        <div><dt>Desktop</dt><dd>C# .NET Windows Forms</dd></div>
+        <div><dt>Tools</dt><dd>Git, GitHub, Visual Studio, Figma, Canva</dd></div>
+        <div><dt>Languages</dt><dd>Bangla (native), English (professional)</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Honours</span>
+      <h2>Dean's List</h2>
+      <p>Dean's List Honors, Faculty of Engineering, American International University - Bangladesh (AIUB). Also a recipient of an academic merit scholarship.</p>
+    </div>
+    <div class="awards" data-group="awards">
+      <div class="card">
+        <button class="shot ceremony" data-cap="Receiving Dean's List Honors at the Dean's List &amp; Dean's Honorable Mention Awarding Ceremony, Faculty of Engineering, AIUB."><img src="assets/award-ceremony-1.jpg" alt="Sharmin Jahan receiving the Dean's List certificate on stage" loading="lazy"></button>
+        <h3>Awarding ceremony</h3>
+        <p class="meta">Dean's List &amp; Dean's Honorable Mention Awarding Ceremony</p>
+      </div>
+      <div class="card">
+        <button class="shot ceremony" data-cap="Receiving the Dean's Award, Faculty of Engineering, AIUB."><img src="assets/award-ceremony-2.jpg" alt="Sharmin Jahan receiving the Dean's Award certificate on stage" loading="lazy"></button>
+        <h3>Dean's Award</h3>
+        <p class="meta">Faculty of Engineering, AIUB</p>
+      </div>
+      <div class="card">
+        <button class="shot contain" data-cap="Dean's List Honors, Fall 2024-25 (GPA 4.00)."><img src="assets/deans-list-fall-2024-25.jpg" alt="Dean's List certificate Fall 2024-25" loading="lazy"></button>
+        <h3>Fall 2024-25</h3>
+        <p class="meta">Semester GPA 4.00 / 4.00</p>
+      </div>
+      <div class="card">
+        <button class="shot contain" data-cap="Dean's List Honors, Spring 2024-25 (GPA 3.88)."><img src="assets/deans-list-spring-2024-25.jpg" alt="Dean's List certificate Spring 2024-25" loading="lazy"></button>
+        <h3>Spring 2024-25</h3>
+        <p class="meta">Semester GPA 3.88 / 4.00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>Open to research collaborations, international programmes and internships in AI, embedded and IoT systems.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:sharminjahan.sj02@gmail.com">sharminjahan.sj02@gmail.com</a>
+      <a class="btn" href="https://github.com/Jahan-Sharmin" target="_blank" rel="noopener">github.com/Jahan-Sharmin</a>
+      <a class="btn" href="https://www.linkedin.com/in/sj-sharminjahan/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="small">Dhaka, Bangladesh · © 2026 Sharmin Jahan</p>
+  </div>
+</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="x" aria-label="Close">×</button>
+  <button class="prev" aria-label="Previous">‹</button>
+  <img alt="">
+  <p></p>
+  <button class="next" aria-label="Next">›</button>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement, t=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme'); if(s) root.setAttribute('data-theme',s);}catch(e){}
+  t.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur==='dark';
+    var next=dark?'light':'dark'; root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+
+  var lb=document.getElementById('lb'), img=lb.querySelector('img'), cap=lb.querySelector('p'), list=[], i=0;
+  function show(){ img.src=list[i].querySelector('img').src; img.alt=list[i].dataset.cap||''; cap.textContent=list[i].dataset.cap||''; }
+  document.querySelectorAll('.shot').forEach(function(b){
+    b.addEventListener('click',function(){
+      var g=b.closest('[data-group]');
+      list=g?Array.prototype.slice.call(g.querySelectorAll('.shot')):[b];
+      if(g&&g.dataset.group){ list=Array.prototype.slice.call(document.querySelectorAll('[data-group="'+g.dataset.group+'"] .shot')); }
+      i=list.indexOf(b); show(); lb.classList.add('open'); document.body.style.overflow='hidden';
+    });
+  });
+  function close(){ lb.classList.remove('open'); document.body.style.overflow=''; }
+  lb.querySelector('.x').onclick=close;
+  lb.querySelector('.prev').onclick=function(e){e.stopPropagation(); i=(i-1+list.length)%list.length; show();};
+  lb.querySelector('.next').onclick=function(e){e.stopPropagation(); i=(i+1)%list.length; show();};
+  lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') close();
+    if(e.key==='ArrowRight') lb.querySelector('.next').click();
+    if(e.key==='ArrowLeft') lb.querySelector('.prev').click();
+  });
+})();
+</script>
+</body>
+</html>
